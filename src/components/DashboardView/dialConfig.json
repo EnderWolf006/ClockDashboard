@@ -1,0 +1,62 @@
+{
+    "dial_1": {
+        "hand": {
+            "sec": {
+                "originOffset": "-50%",
+                "length": "1.7",
+                "width": "auto"
+            },
+            "min": {
+                "originOffset": "-50%",
+                "length": "1.7",
+                "width": "auto"
+            },
+            "hour": {
+                "originOffset": "-50%",
+                "length": "1",
+                "width": "auto"
+            }
+        },
+        "backgroudColor": "rgba(0, 0, 0, 0)"
+    },
+    "dial_2": {
+        "hand": {
+            "sec": {
+                "originOffset": "-50%",
+                "length": "1.7",
+                "width": "auto"
+            },
+            "min": {
+                "originOffset": "-48%",
+                "length": "1.7",
+                "width": "auto"
+            },
+            "hour": {
+                "originOffset": "-52%",
+                "length": "1",
+                "width": "auto"
+            }
+        },
+        "backgroudColor": "rgba(0, 0, 0, 0)"
+    },
+    "dial_3": {
+        "hand": {
+            "sec": {
+                "originOffset": "-50%",
+                "length": "2",
+                "width": "auto"
+            },
+            "min": {
+                "originOffset": "-50%",
+                "length": "1.7",
+                "width": "auto"
+            },
+            "hour": {
+                "originOffset": "-50%",
+                "length": "1.5",
+                "width": "auto"
+            }
+        },
+        "backgroudColor": "rgba(0, 0, 0, 0)"
+    }
+}

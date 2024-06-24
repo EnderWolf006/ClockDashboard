@@ -1,0 +1,16 @@
+{
+  "precision": "精确至秒",
+  "precision_d": "显示秒针",
+  "timezone": "时区",
+  "clockType": "表盘类型",
+  "clockType.traditional": "经典表盘",
+  "clockType.digital": "电子表盘",
+  "traditionalClock.skin": "表盘样式",
+  "traditionalClock.secHandSmooth": "秒针平滑旋转",
+  "digitalClock.mode": "小时制",
+  "digitalClock.mode.12": "12小时制",
+  "digitalClock.mode.24": "24小时制",
+  "digitalClock.font": "字体",
+  "placeholder.pleaseSelect": "请选择",
+  "button.confirm": "确定"
+}

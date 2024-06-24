@@ -1,0 +1,76 @@
+@font-face {
+  font-family: "jetB";
+  src: url("/JETBRAINSMONO-BOLD.TTF");
+}
+
+@font-face {
+  font-family: "fPixel";
+  src: url("/fusion-pixel-12px-monospaced-zh_hans.ttf");
+}
+
+.space {
+  --bgc: rgba(0, 0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  position: absolute;
+  overflow: hidden;
+  background-color: var(--bgc);
+}
+
+.t-clock {
+  --a: 100vmin;
+  width: var(--a);
+  height: var(--a);
+  position: relative;
+}
+
+.dial {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.hand {
+  --rot: 100deg;
+  --originOffset: -2%;
+  --length: 0.5;
+  --width: 2vmin;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  z-index: 2;
+  transform-origin: 0 0px;
+  transform: rotate(calc(var(--rot) - 90deg)) translate(var(--originOffset), -50%);
+  width: calc(var(--a) * 0.5 * var(--length));
+  height: var(--width);
+}
+
+.d-clock {
+  font-family: jetB;
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  font-size: 90vh;
+  gap: 1vw;
+}
+
+.number {
+  line-height: 1;
+}
+
+.suffix {
+  position: absolute;
+  left: calc(100% + 1vw);
+  bottom: 0;
+  font-weight: 900;
+  font-size: 20vh;
+  color: var(--text-shallow-2);
+}

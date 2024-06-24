@@ -1,0 +1,122 @@
+[
+    {
+        "value": -12,
+        "label": "(UTC-12) International Date Line West"
+    },
+    {
+        "value": -11,
+        "label": "(UTC-11) Coordinated Universal Time-11"
+    },
+    {
+        "value": -10,
+        "label": "(UTC-10) Hawaii"
+    },
+    {
+        "value": -9,
+        "label": "(UTC-9) Gambier Islands"
+    },
+    {
+        "value": -8,
+        "label": "(UTC-8) Baja California, Pacific Time (US & Canada)"
+    },
+    {
+        "value": -7,
+        "label": "(UTC-7) Arizona, Mountain Time (US & Canada)"
+    },
+    {
+        "value": -6,
+        "label": "(UTC-6) Central America, Central Time (US & Canada), Saskatchewan, Mexico City"
+    },
+    {
+        "value": -5,
+        "label": "(UTC-5) Bogota, Lima, Quito, Eastern Time (US & Canada)"
+    },
+    {
+        "value": -4,
+        "label": "(UTC-4) Atlantic Time (Canada), Asuncion, Georgetown, La Paz"
+    },
+    {
+        "value": -3.5,
+        "label": "(UTC-3:30) Newfoundland"
+    },
+    {
+        "value": -3,
+        "label": "(UTC-3) Brasilia, Greenland, Buenos Aires, Montevideo"
+    },
+    {
+        "value": -2,
+        "label": "(UTC-2) Coordinated Universal Time-2"
+    },
+    {
+        "value": -1,
+        "label": "(UTC-1) Azores"
+    },
+    {
+        "value": 0,
+        "label": "(UTC 0) Casablanca, Monrovia, Reykjavik, Coordinated Universal Time"
+    },
+    {
+        "value": 1,
+        "label": "(UTC+1) Amsterdam, Berlin, Madrid, Paris"
+    },
+    {
+        "value": 2,
+        "label": "(UTC+2) Athens, Bucharest, Cairo, Jerusalem"
+    },
+    {
+        "value": 3,
+        "label": "(UTC+3) Baghdad, Riyadh, Nairobi, Minsk"
+    },
+    {
+        "value": 3.5,
+        "label": "(UTC+3:30) Tehran"
+    },
+    {
+        "value": 4,
+        "label": "(UTC+4) Moscow, St. Petersburg, Tbilisi, Abu Dhabi"
+    },
+    {
+        "value": 4.5,
+        "label": "(UTC+4:30) Kabul"
+    },
+    {
+        "value": 5,
+        "label": "(UTC+5) Islamabad, Karachi, Chennai, New Delhi"
+    },
+    {
+        "value": 6,
+        "label": "(UTC+6) Astana, Dhaka"
+    },
+    {
+        "value": 7,
+        "label": "(UTC+7) Bangkok, Hanoi, Jakarta, Novosibirsk"
+    },
+    {
+        "value": 8,
+        "label": "(UTC+8) Beijing, Chongqing, Hong Kong, Taipei"
+    },
+    {
+        "value": 9,
+        "label": "(UTC+9) Seoul, Tokyo, Osaka, Sapporo"
+    },
+    {
+        "value": 9.5,
+        "label": "(UTC+9:30) Darwin, Adelaide"
+    },
+    {
+        "value": 10,
+        "label": "(UTC+10) Brisbane, Guam, Canberra, Sydney"
+    },
+    {
+        "value": 11,
+        "label": "(UTC+11) Solomon Islands, New Caledonia"
+    },
+    {
+        "value": 12,
+        "label": "(UTC+12) Fiji, Marshall Islands, Auckland, Wellington"
+    },
+    {
+        "value": 13,
+        "label": "(UTC+13) Nuku'alofa"
+    }
+]
