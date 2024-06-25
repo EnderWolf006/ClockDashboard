@@ -14,14 +14,14 @@ const dailRes = (() => {
       light: {},
       dark: {}
     }
-    res[name].light.dial = `../../../public/dialResourse/${name}/dial_light.svg`
-    res[name].light.hour = `../../../public/dialResourse/${name}/hour_light.svg`
-    res[name].light.min = `../../../public/dialResourse/${name}/min_light.svg`
-    res[name].light.sec = `../../../public/dialResourse/${name}/sec_light.svg`
-    res[name].dark.dial = `../../../public/dialResourse/${name}/dial_dark.svg`
-    res[name].dark.hour = `../../../public/dialResourse/${name}/hour_dark.svg`
-    res[name].dark.min = `../../../public/dialResourse/${name}/min_dark.svg`
-    res[name].dark.sec = `../../../public/dialResourse/${name}/sec_dark.svg`
+    res[name].light.dial = `./dialResourse/${name}/dial_light.svg`
+    res[name].light.hour = `./dialResourse/${name}/hour_light.svg`
+    res[name].light.min = `./dialResourse/${name}/min_light.svg`
+    res[name].light.sec = `./dialResourse/${name}/sec_light.svg`
+    res[name].dark.dial = `./dialResourse/${name}/dial_dark.svg`
+    res[name].dark.hour = `./dialResourse/${name}/hour_dark.svg`
+    res[name].dark.min = `./dialResourse/${name}/min_dark.svg`
+    res[name].dark.sec = `./dialResourse/${name}/sec_dark.svg`
     res[name].config = dialConfig[name as 'dial_1']
   }
   return res;
