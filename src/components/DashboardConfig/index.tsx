@@ -24,13 +24,13 @@ function IconSelect({ optionList, onChange, value }: any) {
             return (
               <div className="iconSelectItem selected" onClick={(e) => onChange(item.value)}>
                 <img className="iconSelectIcon" src={prefix + item.selectedIcon}></img>
-                <div className="iconSelectLabel">{item.label}</div>
+                {item.label && <div className="iconSelectLabel">{item.label}</div>}
               </div>
             )
           return (
             <div className="iconSelectItem" onClick={(e) => onChange(item.value)}>
               <img className="iconSelectIcon" src={prefix + item.icon}></img>
-              <div className="iconSelectLabel">{item.label}</div>
+              {item.label && <div className="iconSelectLabel">{item.label}</div>}
             </div>
           )
         })
@@ -86,10 +86,11 @@ function DashboardConfig(props: any, ref: any) {
     }
   ]
 
-  const traditionalClockSkinOptionList = Object.keys(dialConfig).map((item: any) => {
+  let traditionalClockSkinOptionList = Object.keys(dialConfig).map((item: any) => {
     return {
-      label: item,
-      value: item
+      value: item,
+      icon: `./dialResourse/${item}/style_default.svg`,
+      selectedIcon: `./dialResourse/${item}/style_selected.svg`,
     }
   })
 
@@ -107,7 +108,7 @@ function DashboardConfig(props: any, ref: any) {
 
       <div className="prompt">{t('clockType')}</div>
       <IconSelect optionList={clockTypeOptionList} onChange={(e: any) => { setConfig({ ...config, common: { ...config.common, clockType: e } }) }} value={config.common.clockType} />
-
+      <br/>
       <Checkbox className="select" onChange={(e) => { setConfig({ ...config, common: { ...config.common, precision: e.target.checked } }) }} checked={config.common.precision}>{config.common.clockType !== 'traditional' ? t('precision') : t('precision_d')}</Checkbox >
 
       {
@@ -117,7 +118,10 @@ function DashboardConfig(props: any, ref: any) {
             {config.common.precision && <Checkbox className="select" onChange={(e) => { setConfig({ ...config, traditionalClock: { ...config.traditionalClock, secAnimationSmooth: e.target.checked } }) }} checked={config.traditionalClock.secAnimationSmooth}>{t('traditionalClock.secHandSmooth')}</Checkbox >}
 
             <div className="prompt">{t('traditionalClock.skin')}</div>
-            <Select placeholder={t('placeholder.pleaseSelect')} className="select" optionList={traditionalClockSkinOptionList} onChange={(e) => { setConfig({ ...config, traditionalClock: { ...config.traditionalClock, skin: e } }) }} value={config.traditionalClock.skin}></Select>
+
+            <div className="clockSelectContainer">
+              <IconSelect optionList={traditionalClockSkinOptionList} onChange={(e: any) => { setConfig({ ...config, traditionalClock: { ...config.traditionalClock, skin: e } }) }} value={config.traditionalClock.skin}></IconSelect>
+            </div>
           </>
           :
           <>

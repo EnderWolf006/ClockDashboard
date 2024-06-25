@@ -31,8 +31,6 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(78px, 1fr));
   gap: 8px;
-  margin-bottom: 16px;
-  
 }
 
 .iconSelectItem {
@@ -48,15 +46,24 @@
 }
 
 .iconSelectItem.selected {
-  border: 2px solid var(--select-selected);
+  border: 1px solid var(--select-selected);
   color: var(--select-selected);
 }
 
 .iconSelectLabel {
   font-size: 12px;
+  margin-top: 8px;
 }
 
 .iconSelectIcon {
   width: 100%;
-  margin-bottom: 8px;
+}
+
+.clockSelectContainer {
+  position: relative;
+  padding: 8px;
+  max-height: 200px;
+  overflow: auto;
+  border: 1px solid var(--select-default);
+  border-radius: 8px;
 }

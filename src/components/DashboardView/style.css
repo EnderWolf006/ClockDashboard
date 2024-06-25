@@ -23,7 +23,7 @@
 }
 
 .t-clock {
-  --a: 100vmin;
+  --a: 70vmin;
   width: var(--a);
   height: var(--a);
   position: relative;
