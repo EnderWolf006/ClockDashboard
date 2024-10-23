@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useImperativeHandle, useMemo, useState } from "react";
 import "./style.css";
-import { DashboardState, FieldType, base, bitable, dashboard } from '@lark-base-open/js-sdk';
+import { DashboardState, FieldType, ThemeModeType, base, bitable, dashboard } from '@lark-base-open/js-sdk';
 import { Button, Checkbox, Input, Select, Toast } from "@douyinfe/semi-ui";
 import timezoneZH from '../../timezone/timezone_zh.json';
 import timezoneEN from '../../timezone/timezone_en.json';
@@ -10,8 +10,8 @@ import dialConfig from "../DashboardView/dialConfig.json";
 
 
 let isDark = false
-bitable.bridge.getTheme().then((theme: string) => {
-  isDark = theme.toLocaleLowerCase() == 'dark'
+dashboard.getTheme().then((res) => {
+  isDark = res.theme == ThemeModeType.DARK
 })
 
 function IconSelect({ optionList, onChange, value }: any) {
