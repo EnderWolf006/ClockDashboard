@@ -12,10 +12,12 @@ export function useTheme() {
     // 展示模式使用新版api
     dashboard.getTheme().then((res) => {
       updateTheme(res.theme == ThemeModeType.DARK ? 'dark' : 'light');
+      document.documentElement.style.setProperty('--cbgc', res.chartBgColor)
     })
     
     dashboard.onThemeChange(res => {
       updateTheme(res.data.theme == ThemeModeType.DARK ? 'dark' : 'light');
+      document.documentElement.style.setProperty('--cbgc', res.data.chartBgColor)
     });
   }, [])
 }

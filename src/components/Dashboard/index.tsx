@@ -78,7 +78,7 @@ export default function Dashboard() {
   useConfig(updateConfig)
 
   return (
-    <main style={isConfig ? {} : { borderTop: 'none' }}>
+    <main style={isConfig ? {backgroundColor: "var(--cbgc)"} : { borderTop: 'none' ,backgroundColor: "var(--cbgc)"}}>
       <div className='layout-view' >
         <_DashboardView
           t={t}
