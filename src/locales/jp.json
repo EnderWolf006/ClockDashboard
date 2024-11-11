@@ -1,6 +1,7 @@
 {
   "precision": "秒単位の精度",
   "precision_d": "秒針を表示",
+  "scale": "表盘のスケール",
   "timezone": "タイムゾーン",
   "clockType": "時計の種類",
   "clockType.traditional": "クラシック時計",

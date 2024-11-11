@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useImperativeHandle, useMemo, useState } from "react";
 import "./style.css";
 import { DashboardState, FieldType, ThemeModeType, base, bitable, dashboard } from '@lark-base-open/js-sdk';
-import { Button, Checkbox, Input, Select, Toast } from "@douyinfe/semi-ui";
+import { Button, Checkbox, Input, InputNumber, Select, Toast } from "@douyinfe/semi-ui";
 import timezoneZH from '../../timezone/timezone_zh.json';
 import timezoneEN from '../../timezone/timezone_en.json';
 import timezoneJA from '../../timezone/timezone_ja.json';
@@ -109,6 +109,16 @@ function DashboardConfig(props: any, ref: any) {
       <div className="prompt">{t('clockType')}</div>
       <IconSelect optionList={clockTypeOptionList} onChange={(e: any) => { setConfig({ ...config, common: { ...config.common, clockType: e } }) }} value={config.common.clockType} />
       <br/>
+
+      {
+        config.common.clockType == "digital" && <> <div className="prompt">{t('scale')}</div>
+        <InputNumber min={0} max={1} precision={2} step={0.01} defaultValue={config.scale} onNumberChange={(e: any) => { setConfig({ ...config, scale: e }) }}/>
+        <br/>
+        <br/></>
+      }
+      
+
+
       <Checkbox className="select" onChange={(e) => { setConfig({ ...config, common: { ...config.common, precision: e.target.checked } }) }} checked={config.common.precision}>{config.common.clockType !== 'traditional' ? t('precision') : t('precision_d')}</Checkbox >
 
       {

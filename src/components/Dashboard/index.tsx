@@ -27,7 +27,8 @@ export default function Dashboard() {
     digitalClock: {
       mode: 24,
       font: 'jetB',
-    }
+    },
+    scale: 1.0
   })
 
   const isCreate = dashboard.state === DashboardState.Create
@@ -47,7 +48,8 @@ export default function Dashboard() {
         digitalClock: {
           mode: 24,
           font: 'jetB',
-        }
+        },
+        scale: 1.0
       })
     }
   }, [i18n.language, isCreate])

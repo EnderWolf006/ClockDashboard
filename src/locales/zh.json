@@ -3,6 +3,7 @@
   "precision_d": "显示秒针",
   "timezone": "时区",
   "clockType": "表盘类型",
+  "scale": "表盘缩放",
   "clockType.traditional": "经典表盘",
   "clockType.digital": "电子表盘",
   "traditionalClock.skin": "表盘样式",

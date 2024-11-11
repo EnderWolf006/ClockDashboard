@@ -3,6 +3,7 @@
   "precision_d": "Display second hand",
   "timezone": "Timezone",
   "clockType": "Clock type",
+  "scale": "Scale",
   "clockType.traditional": "Traditional clock",
   "clockType.digital": "Digital clock",
   "traditionalClock.skin": "Clock face style",

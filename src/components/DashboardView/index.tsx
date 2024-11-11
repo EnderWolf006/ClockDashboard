@@ -95,7 +95,7 @@ export function DashboardView(props: any) {
               } as any} />
             </div>
           </div> :
-          <div className="space">
+          <div className="space" style={{"transform": `scale(${config.scale})`}}>
             <div className="d-clock" style={{ fontFamily: config.digitalClock.font, fontSize: isConfig ? '10vh' : '90vh' }}>
               <div className="number">{(config.digitalClock.mode == 24 ? time.hour : time.hour >= 12 ? time.hour - 12 : time.hour).toString().padStart(2, 0)}</div>
               <div className="number">:</div>
